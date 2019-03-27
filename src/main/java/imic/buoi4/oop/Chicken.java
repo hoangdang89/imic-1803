@@ -38,6 +38,8 @@ public class Chicken
     System.out.println("chiken1 -> " + chiken1.mauLong);
     Chicken chicken2 = new Chicken();
     System.out.println("chicken2 -> " + chicken2.mauLong);
+
+    //TODO: do something
   }
 
   public void chipchip()
