@@ -1,6 +1,6 @@
-package google;
+package imic.buoi2.helloworld;
 
-import imic.Chicken;
+import imic.buoi4.oop.Chicken;
 
 /**
  * Hello world!

@@ -41,7 +41,7 @@
             <manifest>
               <addClasspath>true</addClasspath>
               <classpathPrefix>lib/</classpathPrefix>
-              <mainClass>imic.Chicken</mainClass>
+              <mainClass>imic.buoi4.oop.Chicken</mainClass>
             </manifest>
           </archive>
         </configuration>

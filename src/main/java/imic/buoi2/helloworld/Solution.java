@@ -1,4 +1,4 @@
-package imic;
+package imic.buoi2.helloworld;
 
 import java.util.*;
 

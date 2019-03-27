@@ -1,10 +1,10 @@
-package imic;
+package imic.buoi2.helloworld;
 
 /**
  * Hello world!
  *
  */
-public class App2
+public class App3
 {
     public static void main( String[] args )
     {

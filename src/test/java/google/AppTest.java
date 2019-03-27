@@ -1,9 +1,7 @@
 package google;
 
-import imic.Chicken;
+import imic.buoi2.helloworld.App;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 
 public class AppTest
 {
