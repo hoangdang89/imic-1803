@@ -1,4 +1,4 @@
-package imic;
+package imic.buoi4.oop;
 
 import imic.buoi4.oop.Chicken;
 import org.junit.Test;
@@ -16,18 +16,6 @@ public class ChickenTest
   }
 
   @Test
-  public void testDatTenBien()
-  {
-    String publicXYZ;
-    String Test = "Peter";
-    System.out.println(Test);
-    String test = "David";
-    System.out.println(test);
-
-  }
-
-
-  @Test
   public void test2ConGa()
   {
     Chicken chicken1 = new Chicken("TieuBao");
@@ -35,7 +23,6 @@ public class ChickenTest
 
     chicken1.chipchip();
     chicken2.chipchip();
-
   }
 
   @Test
