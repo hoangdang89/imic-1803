@@ -1,9 +1,9 @@
-package imic.buoi2.helloworld;
+package imic.practice;
 
 import java.util.*;
 
 
-public class Solution
+public class Day0
 {
   public static void main(String[] args)
   {
@@ -19,8 +19,6 @@ public class Solution
 
     // Print a string literal saying "Hello, World." to stdout.
     System.out.println("Hello, World.");
-
-    // TODO: Write a line of code here that prints the contents of inputString to stdout.
     System.out.println(inputString);
   }
 }

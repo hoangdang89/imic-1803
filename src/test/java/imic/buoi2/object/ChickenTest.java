@@ -1,6 +1,5 @@
-package imic.buoi4.oop;
+package imic.buoi2.object;
 
-import imic.buoi4.oop.Chicken;
 import org.junit.Test;
 
 

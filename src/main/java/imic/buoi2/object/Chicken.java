@@ -1,4 +1,4 @@
-package imic.buoi4.oop;
+package imic.buoi2.object;
 
 /**
  * Hello world!
@@ -10,6 +10,8 @@ public class Chicken
   public String mauLong;
   public static int soChan;
 
+
+  //----- Constructor
   public Chicken(String name)
   {
     this.name = name;
@@ -26,6 +28,7 @@ public class Chicken
 
   }
 
+  //----- main
   public static void main(String[] args)
   {
     System.out.println("Hello World!");
@@ -38,10 +41,10 @@ public class Chicken
     System.out.println("chiken1 -> " + chiken1.mauLong);
     Chicken chicken2 = new Chicken();
     System.out.println("chicken2 -> " + chicken2.mauLong);
-
-    //TODO: do something
   }
 
+
+  //----- function(), method()
   public void chipchip()
   {
     coBaoNhieuChan();

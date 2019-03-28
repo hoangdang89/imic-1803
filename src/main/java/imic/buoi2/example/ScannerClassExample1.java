@@ -1,15 +1,18 @@
-package imic.buoi2.helloworld;
+package imic.buoi2.example;
 
 import java.util.*;
-public class ScannerClassExample1 {
-  public static void main(String args[]){
+
+public class ScannerClassExample1
+{
+  public static void main(String args[])
+  {
     String s = "Hello, This is JavaTpoint.";
     //Create scanner Object and pass string in it
     Scanner scan = new Scanner(s);
     //Check if the scanner has a token
     System.out.println("Boolean Result: " + scan.hasNext());
     //Print the string
-    System.out.println("String: " +scan.nextLine());
+    System.out.println("String: " + scan.nextLine());
     scan.close();
     System.out.println("--------Enter Your Details-------- ");
     Scanner in = new Scanner(System.in);
