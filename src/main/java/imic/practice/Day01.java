@@ -12,19 +12,19 @@ public class Day01
     String s = "HackerRank ";
 
     Scanner scan = new Scanner(System.in);
+    int line1 = scan.nextInt();
+    double line2 = scan.nextDouble();
+    scan.nextLine();
+    String line3 = scan.nextLine();
 
-    /* Declare second integer, double, and String variables. */
+    //Do request:
+    line1 = line1 + i;
+    line2 = line2 + d;
+    line3 = s + line3;
 
-    /* Read and save an integer, double, and String to your variables.*/
-    // Note: If you have trouble reading the entire String, please go back and review the Tutorial closely.
-
-    /* Print the sum of both integer variables on a new line. */
-    //TODO: do my code here!!!
-
-    /* Print the sum of the double variables on a new line. */
-		
-    /* Concatenate and print the String variables on a new line;
-      the 's' variable above should be printed first. */
+    System.out.println(line1);
+    System.out.println(line2);
+    System.out.println(line3);
 
     scan.close();
   }
