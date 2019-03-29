@@ -24,4 +24,10 @@ public class BasicOperatorTest
   {
     BasicOperator.doLogicalOperators();
   }
+
+  @Test
+  public void doAssignmentOperators()
+  {
+    BasicOperator.doAssignmentOperators();
+  }
 }
