@@ -35,4 +35,19 @@ public class BasicOperator
       System.out.println("NO");
     }
   }
+
+  public static void doLogicalOperators()
+  {
+    int i1 = 10;
+    int i2 = 3;
+    //if i1 == 10 VA i2 la so chan:
+    if(i1 == 10 && (i2 % 2 == 0)){
+      System.out.println("AND OK");
+    }
+
+    //if i1 == 10 HOAC i2 la so le:
+    if(i1 == 10 || (i2 % 2 == 1)){
+      System.out.println("OR OK");
+    }
+  }
 }

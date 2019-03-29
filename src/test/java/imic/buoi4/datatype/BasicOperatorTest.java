@@ -18,4 +18,10 @@ public class BasicOperatorTest
   {
     BasicOperator.doRelationalOperators();
   }
+
+  @Test
+  public void doLogicalOperators()
+  {
+    BasicOperator.doLogicalOperators();
+  }
 }
