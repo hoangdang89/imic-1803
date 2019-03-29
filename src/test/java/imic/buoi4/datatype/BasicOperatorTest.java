@@ -12,4 +12,10 @@ public class BasicOperatorTest
   {
     BasicOperator.doArithmeticOperators();
   }
+
+  @Test
+  public void doRelationalOperators()
+  {
+    BasicOperator.doRelationalOperators();
+  }
 }

@@ -18,8 +18,21 @@ public class BasicOperator
     int i4 = 100;
     i4--;
     System.out.println("i4 = " + i4);
-
-
   }
 
+  public static void doRelationalOperators()
+  {
+    int i1 = 10;
+    if(i1 == 10){
+      System.out.println("YES");
+    } else {
+      System.out.println("NO");
+    }
+
+    if(i1 != 10){
+      System.out.println("YES");
+    } else {
+      System.out.println("NO");
+    }
+  }
 }
