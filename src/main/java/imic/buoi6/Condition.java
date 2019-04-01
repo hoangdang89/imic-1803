@@ -9,6 +9,7 @@ public class Condition
     Scanner scan = new Scanner(System.in);
     int age = scan.nextInt();
 
+    //Complex:
     if (age < 6){
       System.out.println("BABY");
     } else if(age < 12){
@@ -17,6 +18,18 @@ public class Condition
       System.out.println("Young");
     } else {
       System.out.println("Adult!!");
+    }
+
+    //Simple
+    if (age < 6){
+      System.out.println("BABY");
+    }
+
+    //2nd level:
+    if (age < 6){
+      System.out.println("BABY");
+    } else {
+      System.out.println("Teenager");
     }
   }
 }
