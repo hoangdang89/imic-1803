@@ -75,4 +75,24 @@ public class Condition
     }
     System.out.println("Your grade is " + grade);
   }
+
+  public static String doIfElse2(int age, boolean isChildren)
+  {
+    String ketQua = "";
+
+    if(age < 6){
+      ketQua = "BABY";
+    } else if(age < 12){
+      ketQua = "Teenager";
+    } else if(age < 20) {
+      ketQua = "Young";
+    } else{
+      ketQua = "Adult!!";
+      if(isChildren == true) {
+        ketQua = "married";
+      }
+    }
+
+    return ketQua;
+  }
 }
