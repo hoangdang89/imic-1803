@@ -5,7 +5,7 @@ package imic.buoi14;
  */
 public class ThisChicken
 {
-  static int soLuongConGa;
+  static int soLuongConGa = 0;
   String name;
   String mauLong = "YELLOW";
 
@@ -22,9 +22,12 @@ public class ThisChicken
 
   public void showConGa()
   {
+    int soLuongConGa = 10;
     String mauLong = "RED";
     System.out.println(mauLong);
     System.out.println(this.mauLong);
+    System.out.println(soLuongConGa);
+    System.out.println(ThisChicken.soLuongConGa);
   }
 
 }

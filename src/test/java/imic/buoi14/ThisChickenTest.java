@@ -12,6 +12,5 @@ public class ThisChickenTest
   {
     ThisChicken myChiken = new ThisChicken();
     myChiken.showConGa();
-    System.out.println(myChiken.mauLong);
   }
 }
