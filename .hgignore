@@ -3,3 +3,4 @@ syntax: glob
 target/
 helloworld2.iml
 imic-1803.iml
+TEMP/
