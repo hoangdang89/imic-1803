@@ -70,4 +70,14 @@ public class CopyFile
     }
   }
 
+  public static void readInputStreamByBuffer(InputStreamReader inStreamReader) throws IOException
+  {
+    //NOTE: InputStreamReader is a <wrapper> of some input like File
+    //while      BufferReader is a <wrapper> of InputStreamReader
+    BufferedReader bufferedReader = new BufferedReader(inStreamReader);
+    String line = null;
+    while((line = bufferedReader.readLine()) != null){
+      System.out.println("line -> " + line);
+    }
+  }
 }

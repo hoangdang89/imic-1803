@@ -2,10 +2,7 @@ package imic.buoi15;
 
 import org.junit.Test;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.URISyntaxException;
 import java.net.URL;
 
@@ -34,5 +31,17 @@ public class CopyFileTest
     File outputFile = new File(strOutFile);
 
     CopyFile.copyWithFileReaderWriter(inputFile, outputFile);
+  }
+
+  @Test
+  public void readInputStreamByBuffer() throws IOException
+  {
+    URL urlInputFile = CopyFile.class.getClassLoader().getResource("imic/buoi15/input.txt");
+    File inputFile = new File(urlInputFile.getFile());
+    System.out.println("inputFile -> " + inputFile);
+    InputStreamReader inReader = new InputStreamReader(
+        new FileInputStream(inputFile));
+
+    CopyFile.readInputStreamByBuffer(inReader);
   }
 }
