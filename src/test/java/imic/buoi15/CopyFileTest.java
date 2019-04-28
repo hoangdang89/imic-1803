@@ -2,8 +2,12 @@ package imic.buoi15;
 
 import org.junit.Test;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.URISyntaxException;
+import java.net.URL;
 
 public class CopyFileTest
 {
@@ -12,5 +16,23 @@ public class CopyFileTest
   public void copyWithFileInOutStream() throws IOException, URISyntaxException
   {
     CopyFile.copyWithFileInOutStream();
+  }
+
+  @Test
+  public void copyWithFileReaderWriter() throws IOException
+  {
+    URL urlInputFile = CopyFile.class.getClassLoader().getResource("imic/buoi15/input.txt");
+    System.out.println("urlInputFile -> " + urlInputFile);
+    String strInFile = urlInputFile.getFile();
+    System.out.println("strInFile -> " + strInFile);
+    File inputFile = new File(strInFile);
+
+    URL urlBuoi15 = CopyFile.class.getClassLoader().getResource("imic/buoi15/");
+    System.out.println("urlBuoi15 -> " + urlBuoi15);
+    String strOutFile = urlBuoi15.getFile() + "output.txt";
+    System.out.println("strOutFile -> " + strOutFile);
+    File outputFile = new File(strOutFile);
+
+    CopyFile.copyWithFileReaderWriter(inputFile, outputFile);
   }
 }

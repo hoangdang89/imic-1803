@@ -1,9 +1,6 @@
 package imic.buoi15;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 import java.net.URISyntaxException;
 import java.net.URL;
 
@@ -43,6 +40,32 @@ public class CopyFile
       }
       if (outStream != null) {
         outStream.close();
+      }
+    }
+  }
+
+  public static void copyWithFileReaderWriter(File inFile, File outFile) throws IOException
+  {
+    FileReader fileReader = null;
+    FileWriter fileWriter = null;
+
+    try {
+      System.out.println("inFile -> " + inFile.getAbsolutePath());
+      fileReader = new FileReader(inFile);
+      System.out.println("outFile -> " + outFile.getAbsolutePath());
+      fileWriter = new FileWriter(outFile);
+
+      int c;
+      while ((c = fileReader.read()) != -1) {
+        fileWriter.write(c);
+        System.out.printf("%c\n", c);
+      }
+    } finally {
+      if (fileReader != null) {
+        fileReader.close();
+      }
+      if (fileWriter != null) {
+        fileWriter.close();
       }
     }
   }
