@@ -33,15 +33,4 @@ public class CopyFileTest
     CopyFile.copyWithFileReaderWriter(inputFile, outputFile);
   }
 
-  @Test
-  public void readInputStreamByBuffer() throws IOException
-  {
-    URL urlInputFile = CopyFile.class.getClassLoader().getResource("imic/buoi15/input.txt");
-    File inputFile = new File(urlInputFile.getFile());
-    System.out.println("inputFile -> " + inputFile);
-    InputStreamReader inReader = new InputStreamReader(
-        new FileInputStream(inputFile));
-
-    CopyFile.readInputStreamByBuffer(inReader);
-  }
 }
