@@ -9,8 +9,6 @@ import java.io.InputStreamReader;
 import java.net.URISyntaxException;
 import java.net.URL;
 
-import static org.junit.Assert.*;
-
 public class ReadFileTest
 {
 
@@ -31,4 +29,11 @@ public class ReadFileTest
   {
     ReadFile.readFileWithPathJava7();
   }
+
+  @Test
+  public void readFileFromJARLibrary()
+  {
+    ReadFile.readFileFromJARLibrary();
+  }
+
 }

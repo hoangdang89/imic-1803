@@ -1,7 +1,10 @@
 package imic.buoi15;
 
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -44,4 +47,18 @@ public class ReadFile
     System.out.println("#### Read ALL lines with STREAM - JAVA8");
     Files.lines(inputPath).map(x -> "line -> " + x).forEach(System.out::println);
   }
+
+  public static void readFileFromJARLibrary()
+  {
+    System.out.println("Read from JAR: poi-ooxml-3.17.jar, where we have XSSFWorkbook.class");
+    ClassLoader classLoader = XSSFWorkbook.class.getClassLoader();
+    URL urlInputFile = classLoader.getResource("org/apache/poi/xssf/usermodel/");
+    System.out.println("urlInputFile -> " + urlInputFile);
+
+    InputStream inputStream = classLoader.getResourceAsStream("org/apache/poi/xssf/usermodel/presetTableStyles.xml");
+    BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream));
+    System.out.println("presetTableStyles.xml -> ");
+    bufferedReader.lines().forEach(System.out::println);
+  }
+
 }
