@@ -1,0 +1,1 @@
+java -cp "C:\HVDANG\TEMP\IMIC\github\imic-1803\TEST" imic.buoi19.OpenChrome

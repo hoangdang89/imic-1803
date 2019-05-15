@@ -1,0 +1,1 @@
+java -cp C:\HVDANG\TEMP\IMIC\github\imic-1803\target\classes\ imic.buoi2.example.ScannerClassExample1
