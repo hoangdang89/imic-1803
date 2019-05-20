@@ -3,9 +3,9 @@ package imic.ontap.drinkshop;
 public class Drink
 {
 
-  static String category;
-  static String name;
-  static Double price;
+  String category;
+  String name;
+  Double price;
 
 
   public String toString() {
