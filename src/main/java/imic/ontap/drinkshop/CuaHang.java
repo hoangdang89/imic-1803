@@ -24,7 +24,26 @@ public class CuaHang
     double doanhThu = 0.0;
     for (Drink drink: lsBanDuoc){
       //System.out.println("drink -> " + drink);
-      doanhThu += drink.price;
+      doanhThu += drink.getPrice();
+    }
+
+    return doanhThu;
+  }
+
+  public double tinhDoanhThu(String dsBanDuoc, String dsSize)
+  {
+    //Bai 4.d) Viết chương trình tính doanh thu cửa hàng thu được voi siz
+    if(dsSize == null || dsSize.isEmpty()){
+      return tinhDoanhThu(dsBanDuoc);
+    }
+
+    List<Drink> lsBanDuoc = chuyenDoi(dsBanDuoc);
+    setSize(lsBanDuoc, dsSize);
+
+    double doanhThu = 0.0;
+    for (Drink drink: lsBanDuoc){
+      //System.out.println("drink -> " + drink);
+      doanhThu += drink.getPrice();
     }
 
     return doanhThu;
@@ -53,6 +72,24 @@ public class CuaHang
     }
 
     return lsDoUong;
+  }
+
+  private void setSize(List<Drink> dsDoUong, String dsSize)
+  {
+    int i = 0;
+    for(Character ch: dsSize.toCharArray()){
+      switch (ch){
+        case 'L':
+          dsDoUong.get(i).size = "L";
+          break;
+        case 'M':
+          dsDoUong.get(i).size = "M";
+          break;
+        default: //"S"
+          break;
+      }
+      i++;
+    }
   }
 
 }

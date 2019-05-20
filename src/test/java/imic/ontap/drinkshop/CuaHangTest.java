@@ -21,7 +21,7 @@ public class CuaHangTest
   {
     String dsBanDuoc = "CCTSCTSTTT";
     Double doanhThu = cuaHang.tinhDoanhThu(dsBanDuoc);
-    System.out.println(String.format("doanh thu sau %s gio -> %sK", dsBanDuoc.length(), doanhThu));
+    System.out.println(String.format("doanh thu sau %s gio -> %sK", 1, doanhThu));
   }
 
   @Test
@@ -29,6 +29,15 @@ public class CuaHangTest
   {
     String dsBanDuoc = "CCTSCTSTTTTSCSCTTTSCCSTCSSSTTTTTT";
     Double doanhThu = cuaHang.tinhDoanhThu(dsBanDuoc);
-    System.out.println(String.format("doanh thu sau %s gio -> %sK", dsBanDuoc.length(), doanhThu));
+    System.out.println(String.format("doanh thu sau %s gio -> %sK", 5, doanhThu));
+  }
+
+  @Test
+  public void tinhDoanhThu1()
+  {
+    String dsBanDuoc = "CCTSCTSTTT";
+    String dsSize = "SMSSLSLLSM";
+    Double doanhThu = cuaHang.tinhDoanhThu(dsBanDuoc, dsSize);
+    System.out.println(String.format("doanh thu sau %s gio -> %sK", 1, doanhThu));
   }
 }

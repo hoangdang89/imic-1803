@@ -5,10 +5,28 @@ public class Drink
 
   String category;
   String name;
-  Double price;
+  protected Double price;
+  String size;
 
+  public Drink()
+  {
+    size = "S";
+  }
 
-  public String toString() {
+  public Double getPrice()
+  {
+    switch (size){
+      case "L":
+        return price + 10;
+      case "M":
+        return price + 5;
+      default: //"S"
+        return price;
+    }
+  }
+
+  public String toString()
+  {
     return String.format("%s   -> %sK", name, price);
   }
 }
